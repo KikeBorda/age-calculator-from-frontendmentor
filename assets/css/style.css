@@ -169,7 +169,7 @@ hr {
 }
 
 .attribution {
-  position: relative;
+  position: fixed;
   bottom: 0;
   font-size: 11px;
   text-align: center;
@@ -209,8 +209,5 @@ hr {
   .info__paragraph {
     font-size: 70px;
     line-height: 80px;
-  }
-  .attribution {
-    position: fixed;
   }
 }
