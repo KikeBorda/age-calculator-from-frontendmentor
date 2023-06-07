@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="content">
+        <article class="form__content">
+          <form action="" id="form__validate" class="forms">
+            <!-- Group: Day -->
+            <fieldset class="forms__group" id="group__day">
+              <legend class="forms__title--sr-only">Day</legend>
+              <label for="day" class="forms__label error__label">Day</label>
+              <input
+                class="forms__input"
+                id="day"
+                type="number"
+                name="day"
+                placeholder="DD"
+              />
+              <p class="forms__input-error"></p>
+            </fieldset>
+            <!-- Group: Month -->
+            <fieldset class="forms__group" id="group__month">
+              <legend class="forms__title--sr-only">Month</legend>
+              <label for="month" class="forms__label error__label">Month</label>
+              <input
+                class="forms__input"
+                id="month"
+                type="number"
+                name="month"
+                placeholder="MM"
+              />
+              <p class="forms__input-error"></p>
+            </fieldset>
+            <!-- Group: Month -->
+            <fieldset class="forms__group" id="group__year">
+              <legend class="forms__title--sr-only">Year</legend>
+              <label for="year" class="forms__label error__label">Year</label>
+              <input
+                class="forms__input"
+                id="year"
+                type="number"
+                name="year"
+                placeholder="YYYY"
+              />
+              <p class="forms__input-error"></p>
+            </fieldset>
+          </form>
+          <hr />
+          <fieldset class="forms__button">
+            <button
+              class="forms__button-image"
+              type="submit"
+              form="form__validate"
+            >
+              <img src="assets/images/icon-arrow.svg" alt="" />
+            </button>
+          </fieldset>
+        </article>
+        <article class="info__content">
+          <p class="info__paragraph">
+            <span class="info__paragraph--purple dateShow">-- </span>years
+          </p>
+          <p class="info__paragraph">
+            <span class="info__paragraph--purple dateShow">-- </span>months
+          </p>
+          <p class="info__paragraph">
+            <span class="info__paragraph--purple dateShow">-- </span>days
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/KikeBorda">kike Borda</a>.
+    </footer>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
